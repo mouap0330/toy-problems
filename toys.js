@@ -1,16 +1,21 @@
-/* Write a function 'transformFirstAndLast' that takes in an array, and returns an object with:
-1) the first element of the array as the object's key, and
-2) the last element of the array as that key's value.
+/*
+Write a function called "getAllKeys" which returns an array of all the input object's keys.
 */
 
-let testArray = ['one', 'two', 'three','four'];
-
-function transformFirstAndLast(array) {
-  let objectValue = {};
-  let firstWord = array[0];
-
-  objectValue[firstWord] = array[array.length-1];
-  return objectValue;
+let object = {
+  name : 'Sam',
+  age: 25,
+  hasPets: true
 };
 
-console.log(transformFirstAndLast(testArray));
+function getAllKeys(obj){
+  let newArray = [];
+  // for 'property' in 'object'
+  for (let vals in obj) {
+    newArray.push(vals);
+    ////get the values instead 
+    // newArray.push(obj[vals]);
+  }
+  return newArray;
+};
+console.log(getAllKeys(object));
