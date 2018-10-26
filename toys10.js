@@ -7,7 +7,7 @@ var output = isOldEnoughToVote(22);
 console.log(output); // --> true
 */
 
-var output = isOldEnoughToVote(22);
+var output = isOldEnoughToVote(16);
 function isOldEnoughToVote(age) {
   return age >= 18 ? true : false;
 }
