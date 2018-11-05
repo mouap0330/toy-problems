@@ -11,7 +11,7 @@ function countWords(str) {
   var obj = {};
   var newStr = str.split(' ');
 
-  if (newStr === '') {
+  if (str === '') {
     return {};
   }
   for (var i = 0; i < newStr.length; i++) {
